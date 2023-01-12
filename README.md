@@ -43,5 +43,6 @@ a. Ejecuta el contenedor
 - Con el comando "docker run couchdb" ejecutamos la imagen couchdb como contenedor
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/docker-couchdb.PNG "")
 b. Publica el puerto de couchDB
+c. Abre el navegador y verifica que CouchDB esté disponible
 
 
