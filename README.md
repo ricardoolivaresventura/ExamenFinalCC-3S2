@@ -20,6 +20,16 @@ El realizar solicitudes sincrónicas puede llevar a una mala experiencia de usua
 - ¿Cómo actualizar la configuración y me aseguro de que todas las instancias de microservicio afectadas se actualicen correctamente?
 
 # Pregunta 5
+Antes de responder a las preguntas, daremos una breve definición de los logs, los cuales nos informan de todo aquello que pueda estar funcionando de forma incorrecta dentro de un sistema y, para nuestro caso, nos puede informar qué está fallando en nuestra infraestructura de microservicios.
+
+- ¿Cómo se obtiene una descripción general de lo que sucede en el entorno del sistema cuando cada instancia de microservicio escribe en su propio archivo log local?
+Para obtener una descripción general de los logs de los microservicios, necesitamos unificarlos a esto se le llama "centralización de logs". Este método consiste en centralizar, unir o recoger los logs de todos los microservicios y mandarlos a un servidor, en el cual se ejecutará un programa capaz de analizar todos los logs recolectados. De esta manera es como podemos obtener una descripción general de lo que ocurre en el sistema, ya que, tendremos todos los logs reunidos en un único punto. La buena noticia es que ya existen muchos servicios en el mercado que nos pueden ayudar con esto, por ejemplo, Datadog, Fluentd, Graylog o el mismo AWS (Cloudwatch) que expone toda una interfaz en la cual se pueden visualizar todos los logs de un sistema.
+
+- ¿Cómo averiguo si alguna de las instancias de microservicio tiene problemas y comienza a escribir mensajes de error en sus archivos logs?
+En la pregunta anterior a esta se mencionó algunos softwares que nos ayudan con el monitoreo de los logs de todos los microservicios, entonces en el registro unificado de estos softwares podemos ver cuándo una instancia en específico falla.
+
+- Si los usuarios finales comienzan a informar problemas ¿Cómo puedo encontrar mensajes logs relacionados? Es decir, ¿cómo puedo identificar qué instancia de microservicio es la causa raíz del problema?
+Generalmente lo que se hace es lo siguiente, si el usuario reporta un problema sobre cierta pantalla de una aplicación, entonces el desarrollador acude a esa pantalla en ambiente de stagging o sandbox, realiza las pruebas pertinentes para ver qué puede estar fallando con el microservicio que se utiliza en dicha pantalla, del error obtenido también podemos obtener el "trace-id", el cual es un código que nos permite identificar la solicitud, entonces el desarrollador pasa este código al equipo de DevOps para que desde el software, que utilizan para gestionar los logs (por ejemplo, Cloudwatch), pueda buscar los logs correspondientes a este trace id, además en dicho log también se puede ver qué ha fallado e incluso cuál es el nombre o identificador del microservicio que ha fallado, entonces una vez identificado el microservicio que falló, el equipo de DevOps se lo puede comunicar al equipo de Backend para que realice el correspondiente fix al microservicio que falló
 
 # Pregunta 6
 
