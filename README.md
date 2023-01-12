@@ -14,6 +14,15 @@ Cuando tenemos una infraestructura de microservicios, muchas veces se suelen ocu
 # Pregunta 3
 El realizar solicitudes sincrónicas puede llevar a una mala experiencia de usuario, ya que, la aplicación o sistema se suele bloquear hasta que la solicitud sea respondida. Es decir, si realizar una solicitud muy pesada que involucra a varios microservicios, entonces el tiempo de respuesta será muy elevado. La solución más apropiada sería utilizar una comunicación asincrónica. Este tipo de comunicación no bloquea E/S, sino devuelve el control al flujo inicial sin esperar una respuesta. Con este tipo de comunicación se suele liberar el hilo de solicitud de manera que se puedan manejar más solicitudes a pesar que no hayan subprocesos disponibles, debido a que, a diferencia de la comunicación sincrónica, esta crea como una cola de solicitudes que se van tomando a medida que se liberan los recursos disponibles del sistema operativo. Otro beneficio de la asincronicidad es que evitamos los largos tiempos muertos que ocurren con la comunicación sincrónica. Un claro ejemplo podría ser Youtube, cuando vemos un video, este se va cargando a medida que nosotros vamos avanzando en el video, en este caso se está usando la comunicación asincrónica, caso contrario, youtube se bloquearía a cada instante esperando la respuesta del microservicio para cargar más minutos del video.
 
+# Pregunta 4
+- ¿Cómo obtengo una imagen completa de la configuración que existe para todas las instancias de microservicio en ejecución?
+
+- ¿Cómo actualizar la configuración y me aseguro de que todas las instancias de microservicio afectadas se actualicen correctamente?
+
+# Pregunta 5
+
+# Pregunta 6
+
 # Responde e implementa cada una de las siguiente preguntas relacionadas a las actividades desarrolladas en clase.
 
 # 1
