@@ -32,6 +32,8 @@ En la pregunta anterior a esta se mencionó algunos softwares que nos ayudan con
 Generalmente lo que se hace es lo siguiente, si el usuario reporta un problema sobre cierta pantalla de una aplicación, entonces el desarrollador acude a esa pantalla en ambiente de stagging o sandbox, realiza las pruebas pertinentes para ver qué puede estar fallando con el microservicio que se utiliza en dicha pantalla, del error obtenido también podemos obtener el "trace-id", el cual es un código que nos permite identificar la solicitud, entonces el desarrollador pasa este código al equipo de DevOps para que desde el software, que utilizan para gestionar los logs (por ejemplo, Cloudwatch), pueda buscar los logs correspondientes a este trace id, además en dicho log también se puede ver qué ha fallado e incluso cuál es el nombre o identificador del microservicio que ha fallado, entonces una vez identificado el microservicio que falló, el equipo de DevOps se lo puede comunicar al equipo de Backend para que realice el correspondiente fix al microservicio que falló
 
 # Pregunta 6
+- Si los usuarios finales comienzan a presentar casos de soporte con respecto a una falla específica ¿Cómo podemos identificar el microservicio que causó el problema, es decir, la causa raíz?
+
 
 # Responde e implementa cada una de las siguiente preguntas relacionadas a las actividades desarrolladas en clase.
 
@@ -39,4 +41,7 @@ Generalmente lo que se hace es lo siguiente, si el usuario reporta un problema s
 Ejecuta couchDB como un contenedor Docker y publica su puerto, de la siguiente manera
 a. Ejecuta el contenedor
 - Con el comando "docker run couchdb" ejecutamos la imagen couchdb como contenedor
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/docker-couchdb.PNG "")
 b. Publica el puerto de couchDB
+
+
