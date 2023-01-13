@@ -33,7 +33,13 @@ Generalmente lo que se hace es lo siguiente, si el usuario reporta un problema s
 
 # Pregunta 6
 - Si los usuarios finales comienzan a presentar casos de soporte con respecto a una falla específica ¿Cómo podemos identificar el microservicio que causó el problema, es decir, la causa raíz?
+Al igual que el último item de la pregunta 6, lo que podemos hacer es obtener el traceId de la petición y utilizarlo en el software que empleamos para gestionar los logs, aquí podemos buscar los logs correspondientes a este traceId, además al encontrar dichos logs, también podemos ver todos los microservicios involucrados en esta petición y, así mismo, saber qué microservicio(s) fallan para poder solucionarlo.
 
+- Si un caso de soporte menciona problemas relacionados con una entidad específica, por ejemplo, un número de pedido específico ¿Cómo podemos encontrar mensajes de registro relacionados con el procesamiento de este pedido específico, por ejemplo, mensajes logs de todos los microservicios que estuvieron involucrados en su procesamiento?
+Lo que podríamos hacer es agarrar este número de pedido específico y pasarlo como parámetro a la API correspondiente, en caso de obtener el error podemos obtener el traceId y con este código podemos rastrear todos los logs en el software, por ejemplo, cloudWatch y de esa manera podríamos ver la causa del error, así como también qué microservicio o cuáles son los microservicios que fallarán. Luego, el equipo de backend se deberá encargar de fixear los componentes que ocasionan el fallo de dichos microservicios
+
+- Si los usuarios finales comienzan a presentar casos de soporte relacionados con un tiempo de respuesta inaceptablemente largo, ¿Cómo podemos identificar qué microservicio en una cadena de llamadas está causando la demora?
+Es básicamente lo mismo que en los items anteriores, obtener el traceId, identificar el microservicio "A" que se utiliza, luego ver qué otros microservicios están siendo utilizados por este microservicio, luego analizar cada microservicio, de la siguiente manera, podemos realizar peticiones a estos microservicios y ver el tiempo de respuesta de cada uno de ellos y así poder identificar cuál es el que está generando que el microservicio "A" se demora mucho en responder.
 
 # Responde e implementa cada una de las siguiente preguntas relacionadas a las actividades desarrolladas en clase.
 
