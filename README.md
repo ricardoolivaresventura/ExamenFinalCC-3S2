@@ -16,8 +16,9 @@ El realizar solicitudes sincrónicas puede llevar a una mala experiencia de usua
 
 # Pregunta 4
 - ¿Cómo obtengo una imagen completa de la configuración que existe para todas las instancias de microservicio en ejecución?
-
+Los microservivios se suben a un servidor para que esté disponible para los clientes, en la configuración de este servidor podemos agregar todas las variables de entorno, configuraciones, comandos para ejecutar diferentes scripts, etc y como estos microservicios están subidos en este servidor, entonces pueden acceder a ellos. Y al tener toda esta información disponible, entonces simplemente podemos construir su imagen, el cual podemos almacenarlo en este servidor o en otro y simplemente para usarlo en estos microservicios en ejecución tendremos que bajar la imagen y ejecutarla.
 - ¿Cómo actualizar la configuración y me aseguro de que todas las instancias de microservicio afectadas se actualicen correctamente?
+Podríamos tener un script el cual tendrá comandos que descarguen la última versión de la imagen que contiene la configuración, entonces cuando se actualiza esta imagen, simplemente ejecutamos el script y todas las instancias de los microservicios que utilizan esta imagen se actualizarán correctamente
 
 # Pregunta 5
 Antes de responder a las preguntas, daremos una breve definición de los logs, los cuales nos informan de todo aquello que pueda estar funcionando de forma incorrecta dentro de un sistema y, para nuestro caso, nos puede informar qué está fallando en nuestra infraestructura de microservicios.
