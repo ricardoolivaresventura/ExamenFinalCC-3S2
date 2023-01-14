@@ -70,3 +70,24 @@ a. Crea un pipeline que ejecuta un script de Ruby que imprima Hola Mundo desde R
 b y c. Utiliza el siguiente comando de shell para crear el script hola.rb sobre la marcha y agregue el comando para ejecutar hola.rb
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/run-ruby.PNG "")
 
+# 5
+Crea un programa de Python que multiplique, sume, reste, divide dos números pasados como parámetros de línea de comandos. Agrega pruebas unitarias y publica el proyecto en Github
+a. Crea dos archivos: calculador.py y test_calculador.py
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/calculador-python.PNG "")
+b. Puedes usar la biblioteca unittest
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/test-calculador.PNG "")
+c. Ejecutar el programa y la prueba unitaria
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/execute-calculador.PNG "")
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/execute-test-calculador.PNG "")
+d. Subir a Github
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/calculadora-python-github.PNG "")
+
+# 6
+Crea el pipeline de integración continua para el proyecto de calculadora de Python
+a. Usa Jenkinsfile para especificar el pipeline
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/calculador-python-jenkinsfile.PNG "")
+b y c. Configura el trigger para que el pipeline se ejecute automáticamente en caso de que se haga commit en el repositorio. Python no Necesito el paso compile porque es un lenguaje interpretado
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/calculador-python-jenkinsfile-triggers.PNG "")
+d. Ejecuta el pipeline y observa los resultados
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/execute-calculador-pipeline.PNG "")
+
