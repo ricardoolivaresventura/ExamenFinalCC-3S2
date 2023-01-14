@@ -49,6 +49,12 @@ a. Ejecuta el contenedor
 - Con el comando "docker run couchdb" ejecutamos la imagen couchdb como contenedor
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/docker-couchdb.PNG "")
 b. Publica el puerto de couchDB
-c. Abre el navegador y verifica que CouchDB esté disponible
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/publish-couchdb.PNG "")
 
+# 2
+Crear una imagen de Docker con un servicio REST, respondiendo Hola Amigos CC-3S2 a localhost:8080/hola. Utiliza el lenguaje y el framework que prefieras.
+a. Crear una aplicación web
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/api-rest-flask.PNG "")
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/api-rest-localhost.PNG "")
+b. Crear un Dockerfile para instalar dependencias y librerías
 
