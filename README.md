@@ -46,8 +46,7 @@ Es básicamente lo mismo que en los items anteriores, obtener el traceId, identi
 
 # 1
 Ejecuta couchDB como un contenedor Docker y publica su puerto, de la siguiente manera
-a. Ejecuta el contenedor
-- Con el comando "docker run couchdb" ejecutamos la imagen couchdb como contenedor
+a. Ejecuta el contenedor. Con el comando "docker run couchdb" ejecutamos la imagen couchdb como contenedor
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/docker-couchdb.PNG "")
 b. Publica el puerto de couchDB
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/publish-couchdb.PNG "")
@@ -56,18 +55,23 @@ b. Publica el puerto de couchDB
 Crear una imagen de Docker con un servicio REST, respondiendo Hola Amigos CC-3S2 a localhost:8080/hola. Utiliza el lenguaje y el framework que prefieras.
 a. Crear una aplicación web
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/api-rest-flask.PNG "")
+
 b. Crear un Dockerfile para instalar dependencias y librerías
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/flask-dockerfile.PNG "")
+
 c. Construye la imagen
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/image-flask+.PNG "")
+
 d. Ejecuta el contenedor que publica el puerto
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/run-flask.PNG "")
+
 e. Verifica que se esté ejecutando correctamente utilizando el navegador
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/api-rest-localhost.PNG "")
 
 # 4
 a. Crea un pipeline que ejecuta un script de Ruby que imprima Hola Mundo desde Ruby:
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/hola-mundo-ruby.PNG "")
+
 b y c. Utiliza el siguiente comando de shell para crear el script hola.rb sobre la marcha y agregue el comando para ejecutar hola.rb
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/run-ruby.PNG "")
 
@@ -75,11 +79,14 @@ b y c. Utiliza el siguiente comando de shell para crear el script hola.rb sobre 
 Crea un programa de Python que multiplique, sume, reste, divide dos números pasados como parámetros de línea de comandos. Agrega pruebas unitarias y publica el proyecto en Github
 a. Crea dos archivos: calculador.py y test_calculador.py
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/calculador-python.PNG "")
+
 b. Puedes usar la biblioteca unittest
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/test-calculador.PNG "")
+
 c. Ejecutar el programa y la prueba unitaria
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/execute-calculador.PNG "")
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/execute-test-calculador.PNG "")
+
 d. Subir a Github
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/calculadora-python-github.PNG "")
 
