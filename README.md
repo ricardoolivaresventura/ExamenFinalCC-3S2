@@ -57,15 +57,19 @@ a. Crear una aplicación web
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/api-rest-flask.PNG "")
 
 b. Crear un Dockerfile para instalar dependencias y librerías
+
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/flask-dockerfile.PNG "")
 
 c. Construye la imagen
+
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/image-flask+.PNG "")
 
 d. Ejecuta el contenedor que publica el puerto
+
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/run-flask.PNG "")
 
 e. Verifica que se esté ejecutando correctamente utilizando el navegador
+
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/api-rest-localhost.PNG "")
 
 # 4
