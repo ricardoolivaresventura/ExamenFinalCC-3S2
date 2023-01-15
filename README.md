@@ -85,7 +85,7 @@ a. Crea dos archivos: calculador.py y test_calculador.py
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/calculador-python.PNG "")
 
 b. Puedes usar la biblioteca unittest
-![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/test-calculador.PNG "")
+![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/test_calculador.PNG "")
 
 c. Ejecutar el programa y la prueba unitaria
 ![Alt text](https://raw.githubusercontent.com/ricardoolivaresventura/ExamenFinalCC-3S2/main/execute-calculador.PNG "")
